@@ -9,7 +9,8 @@ import {
   Car,
   GraduationCap,
   Code2,
-  CloudSun
+  CloudSun,
+  Newspaper,
 } from "lucide-react";
 import gsap from "gsap";
 import { useLayoutEffect, useRef } from "react";
@@ -40,8 +41,13 @@ const cards = [
   {
     to: "/email-prediction",
     title: "Email spam",
-    description: "Prediction whether the mail is spam or ham",
+    description: "Prediction wheather the mail is spam or ham",
     icon: Mail
+  },{
+    to: "/news-prediction",
+    title: "News detection",
+    description: "Prediction wheather the news is real or fake",
+    icon: Newspaper
   },{
     to: "/car-prediction",
     title: "Car price",
@@ -54,7 +60,7 @@ const cards = [
     icon: GraduationCap
   },{
     to: "/weather_prediction",
-    title: "Predict weather",
+    title: "Weather prediction",
     description: "Weather prediction",
     icon: CloudSun
   }
@@ -198,12 +204,12 @@ export default function Home() {
         <span>
           Predictions are model outputs, not medical diagnoses.
         </span>
-        <button
+        <a href="https://github.com/AnujrajShrestha/multiple-ml-models-deployment.git"><button
   className="flex items-center justify-center gap-2 rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-gray-800"
 >
   <Code2 size={18} />
   Source code
-</button>
+</button></a>
       </div>
     </main>
   );

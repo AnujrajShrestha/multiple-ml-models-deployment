@@ -17,7 +17,10 @@ const StudentPlacementPrediction_API_URL=
 import.meta.env.VITE_STUDENT_PLACEMENT_API_URL;
 
 const WeatherPrediction_API_URL=
-import.meta.env.VITE_WEATHER_PREDICTION_API_URL
+import.meta.env.VITE_WEATHER_PREDICTION_API_URL;
+
+const FakeNewsDetection_API_URL=
+import.meta.env.VITE_FAKE_NEWS_DETECHTION_API_URL;
 
 
 async function request(url, options = {}) {
@@ -118,6 +121,12 @@ export async function predictWeather(payload){
   });
 }
 
+export async function predictFakeNews(payload){
+  return request(`${FakeNewsDetection_API_URL}/predict`,{
+    method: 'POST',
+    body: JSON.stringify(payload)
+  });
+}
 
 export {
   HEART_API_URL,
@@ -126,5 +135,6 @@ export {
   EmailSpamDetection_API_URL,
   CarPricePrediction_API_URL,
   StudentPlacementPrediction_API_URL,
-  WeatherPrediction_API_URL
+  WeatherPrediction_API_URL,
+  FakeNewsDetection_API_URL
 };

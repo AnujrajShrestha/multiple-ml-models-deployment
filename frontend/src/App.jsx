@@ -11,6 +11,7 @@ import EmailSpamDetection from "./pages/EmailSpamDetection";
 import CarPricePrediction from "./pages/CarPricePrediction";
 import StudentPlacementPrediction from "./pages/StudentPlacementPrediction";
 import WeatherPrediction from "./pages/WeatherPrediction";
+import FakeNewsDetection from "./pages/FakeNewsDetection"
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -44,6 +45,11 @@ export default function App() {
   <Route
   path="/email-prediction"
   element={<EmailSpamDetection />}
+  />
+
+  <Route 
+  path="/news-prediction"
+  element= {<FakeNewsDetection />}
   />
 
   <Route

@@ -8,7 +8,8 @@ import {
   Car,
   GraduationCap,
   icons,
-  CloudSun
+  CloudSun,
+  Newspaper
 } from "lucide-react";
 
 const models = [
@@ -36,6 +37,10 @@ const models = [
     path: "/email-prediction",
     label: "Email spam",
     icon: Mail
+  },{
+    path: "/news-prediction",
+    label: "News detection",
+    icon: Newspaper
   },
   {
     path: "/car-prediction",
@@ -47,7 +52,7 @@ const models = [
     icon: GraduationCap
   },{
     path: "/weather_prediction",
-    label: "Predict weather",
+    label: "Weather prediction",
     icon: CloudSun
   }
 ];
