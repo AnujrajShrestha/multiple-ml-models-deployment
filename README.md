@@ -526,7 +526,7 @@ Machine Learning / Backend / Full-Stack Developer
 
 This project was built as a practical exploration of deploying multiple machine learning models as real-world web services.
 
-The machine learning models and backend APIs were developed by the **author**. AI assistance was used for frontend **vibe coding**, while the author managed the application's routing, API integration, model integration, and overall project architecture.
+The machine learning models and backend APIs were developed by the **author**. AI assistance was used for frontend **vibe coding**, while the author managed the application's routing, API integration, model integration, and overall project architecture!
 
 ---
 
