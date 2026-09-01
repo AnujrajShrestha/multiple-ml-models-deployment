@@ -532,7 +532,7 @@ The machine learning models and backend APIs were developed by the **author**. A
 
 ## 📄 License
 
-This project is available for educational and portfolio purposes. Please check the repository for the applicable licensing information.
+This project is available for educational and portfolio purposes. Please check the repository for the applicable licensing information!
 
 ---
 
